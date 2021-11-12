@@ -11,7 +11,7 @@
       <div class="fio">
         <div>
           Фамилия
-          <input type="text" class="surname" name="surname" v-model="values.surname"/>
+          <input type="text" class="surname" name="surname" v-model="values.surname" id="surname"/>
         </div>
         <div>
           Имя
@@ -32,7 +32,7 @@
       </div>
       <div class="wrapper">
         Пол <br />
-        <input type="radio" name="mail" value="male" v-model="values.checkedSex" /> Мужской
+        <input type="radio" class="male" name="mail" value="male" v-model="values.checkedSex" /> Мужской
         <input type="radio" name="mail" value="female" v-model="values.checkedSex"/> Женский
       </div>
 
@@ -46,7 +46,7 @@
             @focus="isDropdownOpen = true"
           />
           <div v-if="isDropdownOpen" class="citizenship-dropdown">
-            <ul v-if="countries.length">
+            <ul v-if="countries.length" class="ul-countries">
               <li
                 v-for="i in countries.length"
                 :key="i"
@@ -93,7 +93,7 @@
         </div>
       </div>
       <div class="button-wrapper">
-        <button class="button" type="submit">Отправить</button>
+        <button class="button" type="submit" id="test-click">Отправить</button>
       </div>
     </form>
   </div>

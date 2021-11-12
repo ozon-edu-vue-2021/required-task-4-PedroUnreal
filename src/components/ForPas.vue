@@ -5,7 +5,7 @@
         Фамилия на латинице
         <input
           type="text"
-          class="surname"
+          class="forsurname"
           v-model="foreignSurname"
           @change="setForeignSurname"
         />
@@ -14,7 +14,7 @@
         Имя на латинице
         <input
           type="text"
-          class="name"
+          class="forname"
           v-model="foreignName"
           @change="setForeignName"
         />
